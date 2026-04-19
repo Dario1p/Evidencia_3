@@ -27,4 +27,8 @@ class Videojuego:
     def set_plataforma(self, nueva_plataforma):
         self.__plataforma = nueva_plataforma
 
-    
+    def get_horas_jugadas(self):
+        return self.__horas_jugadas
+    def set_horas_jugadas(self, nuevas_horas):
+        self.__horas_jugadas = nuevas_horas
+        
