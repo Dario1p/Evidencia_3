@@ -56,3 +56,13 @@ objeto_videojuego = Videojuego("Hollow knight","Plataforma", 180, "PC", 16)
 print("Información del juego:")
 objeto_videojuego.info()
 
+porcentaje = int(input("Cuando porcentaje quieres aplicarle?: "))
+objeto_videojuego.descuento(porcentaje)
+horas = int(input("Cuantos horas jugaste?: "))
+objeto_videojuego.registrar_horas_jugadas(horas)
+
+objeto_videojuego.set_plataforma("PlayStation 5")
+print("Se ha cambiado la plataforma del juego")
+
+print("Nueva informacion del juego:")
+objeto_videojuego.info()
