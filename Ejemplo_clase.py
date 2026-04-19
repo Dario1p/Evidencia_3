@@ -22,4 +22,9 @@ class Videojuego:
     def set_precio(self, nuevo_precio):
         self.__precio = nuevo_precio
 
+    def get_plataforma(self):
+        return self.__plataforma
+    def set_plataforma(self, nueva_plataforma):
+        self.__plataforma = nueva_plataforma
+
     
