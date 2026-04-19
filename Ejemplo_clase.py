@@ -7,3 +7,13 @@ class Videojuego:
         self.__plataforma = plataforma
         self.__horas_jugadas = horas_jugadas
 
+    def get_titulo(self):
+        return self.__titulo
+    def set_titulo(self, nuevo_titulo):
+        self.__titulo = nuevo_titulo
+
+    def get_genero(self):
+        return self.__genero
+    def set_genero(self, nuevo_genero):
+        self.__genero = nuevo_genero
+
