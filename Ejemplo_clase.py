@@ -16,3 +16,10 @@ class Videojuego:
         return self.__genero
     def set_genero(self, nuevo_genero):
         self.__genero = nuevo_genero
+    
+    def get_precio(self):
+        return self.__precio
+    def set_precio(self, nuevo_precio):
+        self.__precio = nuevo_precio
+
+    
