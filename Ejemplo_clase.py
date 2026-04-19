@@ -38,4 +38,11 @@ class Videojuego:
         print(f"El precio del juego es: {self.get_precio()}")
         print(f"La plataforma del juego es: {self.get_plataforma()}")
         print(F"Tus horas jugadas en el juego son: {self.get_horas_jugadas()}")
-        
+
+    def descuento(self, porcentaje):
+        precio_actual = self.get_precio()
+        descuento = precio_actual * porcentaje
+        descuento = descuento / 100
+        self.set_precio(precio_actual - descuento)
+        print(f"Oferta aplicada, e   l descuento fue de {porcentaje}%")
+    
