@@ -44,5 +44,11 @@ class Videojuego:
         descuento = precio_actual * porcentaje
         descuento = descuento / 100
         self.set_precio(precio_actual - descuento)
-        print(f"Oferta aplicada, e   l descuento fue de {porcentaje}%")
+        print(f"Oferta aplicada, el descuento fue de {porcentaje}%")
+
+    def registrar_horas_jugadas(self, horas):
+        total_horas = self.get_horas_jugadas() + horas
+        self.set_horas_jugadas(total_horas)
+        print(f"Sumaste {horas} el total de horas jugadas ahora son: {self.get_horas_jugadas()}")
+
     
