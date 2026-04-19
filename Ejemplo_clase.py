@@ -31,4 +31,11 @@ class Videojuego:
         return self.__horas_jugadas
     def set_horas_jugadas(self, nuevas_horas):
         self.__horas_jugadas = nuevas_horas
+
+    def info(self):
+        print(f"El titulo del juego es: {self.get_titulo()}")
+        print(f"El genero del juego es: {self.get_genero()}")
+        print(f"El precio del juego es: {self.get_precio()}")
+        print(f"La plataforma del juego es: {self.get_plataforma()}")
+        print(F"Tus horas jugadas en el juego son: {self.get_horas_jugadas()}")
         
