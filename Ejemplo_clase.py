@@ -16,4 +16,3 @@ class Videojuego:
         return self.__genero
     def set_genero(self, nuevo_genero):
         self.__genero = nuevo_genero
-
