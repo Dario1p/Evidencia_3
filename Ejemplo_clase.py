@@ -1,6 +1,6 @@
 class Videojuego:
 
-    def _init_(self, titulo, genero, precio, plataforma, horas_jugadas):
+    def __init__(self, titulo, genero, precio, plataforma, horas_jugadas):
         self.__titulo = titulo
         self.__genero = genero
         self.__precio = precio
@@ -35,7 +35,7 @@ class Videojuego:
     def info(self):
         print(f"El titulo del juego es: {self.get_titulo()}")
         print(f"El genero del juego es: {self.get_genero()}")
-        print(f"El precio del juego es: {self.get_precio()}")
+        print(f"El precio del juego en pesos es: {self.get_precio()}")
         print(f"La plataforma del juego es: {self.get_plataforma()}")
         print(F"Tus horas jugadas en el juego son: {self.get_horas_jugadas()}")
 
@@ -51,4 +51,8 @@ class Videojuego:
         self.set_horas_jugadas(total_horas)
         print(f"Sumaste {horas} el total de horas jugadas ahora son: {self.get_horas_jugadas()}")
 
-    
+###################################################################################################
+objeto_videojuego = Videojuego("Hollow knight","Plataforma", 180, "PC", 16)
+print("Información del juego:")
+objeto_videojuego.info()
+
